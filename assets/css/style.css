@@ -38,6 +38,15 @@ a {
 }
 .btn:hover {
   opacity: 0.8;
+  cursor: pointer;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.27;
+  letter-spacing: -2%;
 }
 /* ===================header=================== */
 .header {
@@ -226,4 +235,111 @@ a {
 }
 .hero .stats {
   margin-top: 8px;
+}
+/* ===================popular=================== */
+.popular {
+  padding: 65px 0px;
+  margin-top: 135px;
+}
+.popular_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular_top .controls {
+  display: flex;
+  /* gap:18px(khoang cach giua cac phan tu ) */
+  gap: 18px;
+}
+.popular_top .desc {
+  width: 458px;
+  margin-top: 16px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+.popular_top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.popular_top .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+.popular .courselist {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+.popular .course-item .thumbnail {
+  /* cach khong de bi tran ra khoi khung */
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  /* border-radius bo 4 goc (trai tren,phai tren,duoi phai,duoi trai) */
+  /* padding hay margin la (tren,phai,duoi,trai) */
+  height: 278px;
+  /* object-fit:cover(lap day phan tu khong bi meo anh ,nhung co the bi cat) */
+  object-fit: cover;
+}
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background-color: #fff;
+}
+.popular .course-item:hover {
+  border: 10px solid #e2dfda;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(125, 200, 0, 0.2);
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .head,
+.popular .course-item .foot,
+.popular .course-item .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .course-item .title a {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.popular .rating .value {
+  color: #fea31b;
+  margin-left: 6px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.popular .course-item .desc {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .course-item .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.popular .course-item .btn {
+  border: none;
+}
+.popular .course-item .btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
