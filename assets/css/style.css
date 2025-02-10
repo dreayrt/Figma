@@ -290,6 +290,8 @@ a {
   object-fit: cover;
 }
 .popular .course-item {
+  /* giu ti le cua cac item luon bang nhau */
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background-color: #fff;
