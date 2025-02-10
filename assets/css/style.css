@@ -50,7 +50,6 @@ a {
 }
 /* ===================header=================== */
 .header {
-  border: 1px solid red;
   background: #d1a93a;
 }
 .header .body {
@@ -351,9 +350,21 @@ a {
   padding: 96px 0px;
   background: #2e2100;
 }
+.feedback-list{
+  display: flex;
+  overflow: hidden;
+}
 .feedback .feedback-item {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  /* flex-shrink: 0;(do co cua phan tu) */
+  flex-shrink: 0;
+  /* transform: translateX(-100%);(dich theo truc x) */
+  transform: translateX(-100%);
+  /* transition: all ease 0.5s; (hieu ung chuyen tiep) */
+  transition: all ease 0.5s;
+
 }
 .feedback-item .avatar {
   width: 72px;
@@ -404,3 +415,4 @@ a {
   /* cach tinh line-height=(fontsize/line-height)*100 */
   line-height: 1.54;
 }
+
