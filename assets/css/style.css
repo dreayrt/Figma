@@ -350,7 +350,7 @@ a {
   padding: 96px 0px;
   background: #2e2100;
 }
-.feedback-list{
+.feedback-list {
   display: flex;
   overflow: hidden;
 }
@@ -361,10 +361,9 @@ a {
   /* flex-shrink: 0;(do co cua phan tu) */
   flex-shrink: 0;
   /* transform: translateX(-100%);(dich theo truc x) */
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
   /* transition: all ease 0.5s; (hieu ung chuyen tiep) */
-  transition: all ease 0.5s;
-
+  /* transition: all ease 0.5s; */
 }
 .feedback-item .avatar {
   width: 72px;
@@ -400,7 +399,7 @@ a {
 /* .feedback-item .info .dot:active{
   background: var(--primary-color);
 } */
-.feedback-item .info .dot.active{
+.feedback-item .info .dot.active {
   background-color: var(--primary-color);
   cursor: default;
 }
@@ -412,7 +411,64 @@ a {
   font-style: italic;
   font-size: 2.6rem;
   /* line-height: 40px; */
-  /* cach tinh line-height=(fontsize/line-height)*100 */
+  /* cach tinh line-height=(line-height/fontsize)*100 */
   line-height: 1.54;
 }
-
+/* ===================features=================== */
+.features {
+  margin-top: 135px;
+  padding: 65px 0px;
+}
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+.features .images img {
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.features .images .lower {
+  margin-top: 34px;
+}
+.features .content {
+  display: flex;
+  width: 41%;
+  flex-direction: column;
+  justify-content: center;
+}
+.features .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+.features .btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  border-radius: 26px;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+/* ===================features 2=================== */
+.features-2nd {
+  margin-top: 70px;
+}
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+.features-2nd .content {
+  width: 49%;
+}
+.features-2nd .images img {
+  width: 470;
+  height: 440;
+  border-radius: 20px;
+  
+}
