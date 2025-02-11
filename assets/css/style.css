@@ -470,5 +470,127 @@ a {
   width: 470;
   height: 440;
   border-radius: 20px;
-  
+}
+/* ===================Blog=================== */
+.blog {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #fffcf4;
+}
+.blog .blog_top {
+  /* flex-direction: column;
+  display: flex;
+  align-items: center;
+  hoac: */
+  text-align: center;
+  margin-bottom: 55px;
+}
+.blog .blog_top .desc {
+  margin: 16px auto 0px;
+  color: #696262;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  width: 448px;
+}
+.blog .blog_list {
+  overflow: hidden;
+  gap: 30px;
+  display: flex;
+}
+.blog .blog-item {
+  /* dam bao cac item khong bi co lai */
+  flex-shrink: 0;
+  /* gioi han do rong ca 3 item */
+  /* width: 33.33%; */
+  /* dung cacl de dam bao cac anh khong bi chen ep */
+  width: calc(33.33% - 20px);
+  border-radius: 16px;
+  background: #fff;
+}
+.blog .blog-item:hover {
+  box-shadow: 0px 18px 36px 0px rgba(125, 200, 0, 0.2);
+}
+
+.blog .blog-item .thumbnail {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+.blog .blog-item .info {
+  padding: 20px 20px 28px;
+}
+.blog .blog-item .info .date {
+  padding-bottom: 12px;
+  position: relative;
+  /* the cha cua no chi chua vua noi dung cua no */
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+/* the before truong hop nay nhu la the con cua date */
+.blog .blog-item .info .date::before {
+  margin-right: 4px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+/* display:inline-block:
+  Giống inline:
+Phần tử không bị xuống dòng, nghĩa là có thể đặt nhiều phần tử inline-block trên cùng một hàng (nếu đủ không gian).
+Có thể xuất hiện cùng dòng với văn bản hoặc các phần tử inline khác.
+Giống block:
+  Giống Block:
+Có thể thiết lập các thuộc tính về kích thước như width, height.
+Có thể sử dụng margin, padding theo cả chiều ngang và chiều dọc.
+  Kết quả: Các div sẽ nằm trên cùng một hàng thay vì xuống dòng như display: block.
+ */
+.blog .blog-item .info .date::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  /* la de thanh nganh luon chay theo text neu text dai ra */
+  right: -27px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+.blog .blog-item .title {
+  margin-top: 12px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.blog .blog-item .btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+.blog .blog-item .btn:hover {
+  background: #ffb900;
+}
+.blog .dots {
+  margin-top: 38px;
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+}
+.blog .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+.blog .dots .dot.active {
+  cursor: default;
+  background: #ffb900;
 }
