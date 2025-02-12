@@ -594,3 +594,77 @@ Có thể sử dụng margin, padding theo cả chiều ngang và chiều dọc.
   cursor: default;
   background: #ffb900;
 }
+/* ===================Footer=================== */
+footer {
+  background: #2e2100;
+  padding: 96px 135px 0px;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .desc {
+  margin-top: 18px;
+  /* width thi text khong co lai duoc
+     max-width thi text co lai duoc */
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer .socials {
+  display: flex;
+  gap: 18px;
+}
+.footer .socials .icon {
+  width: 18px;
+  height: 15px;
+}
+/* duong gach ma co border-radius thi phai dung before after 
+   duong gach khong co border-radius thi dung border-bottom ve ra duoc */
+.footer .title {
+  border-bottom: 1px solid #59554b;
+  /* display:inline-block:(de vua khop noi dung text) */
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  padding-bottom: 14px;
+  /* 130-82=48px */
+  padding-right: 48px;
+}
+.footer .list {
+  margin-top: 28px;
+}
+/* the a la the inline khong margin top/bottom duoc */
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer .list a:last-child {
+  margin-bottom: 0px;
+}
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+.footer .copyright {
+  text-align: center;
+  padding: 28px 0px;
+  color: #807d74;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
